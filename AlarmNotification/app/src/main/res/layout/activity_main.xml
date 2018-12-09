@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_background"
+    tools:background="#661510"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="12dp"
+        android:text="Notificami" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="13dp"
+        android:text="Notifica Off" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="76dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/desc"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <ListView
+        android:id="@+id/listViewF"
+        android:layout_width="305dp"
+        android:layout_height="254dp"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="214dp"
+        android:layout_marginEnd="-97dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonF"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="19dp"
+        app:srcCompat="@drawable/ic_refresh_black_24dp" />
+
+    <Switch
+        android:id="@+id/lunedi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/listViewF"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="29dp"
+        android:text="Lun" />
+
+    <Switch
+        android:id="@+id/martedi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/lunedi"
+        android:text="Mar" />
+
+    <Switch
+        android:id="@+id/mercoledi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="-12dp"
+        android:text="Mer" />
+
+    <Switch
+        android:id="@+id/giovedi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mercoledi"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/mercoledi"
+        android:text="Gio" />
+
+    <Switch
+        android:id="@+id/venerdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mercoledi"
+        android:layout_alignEnd="@+id/imageButtonF"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-28dp"
+        android:text="Ven" />
+
+    <Switch
+        android:id="@+id/sabato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mercoledi"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="23dp"
+        android:text="Sab" />
+
+    <Switch
+        android:id="@+id/domenica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/venerdi"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/lunedi"
+        android:text="Dom" />
+
+
+</RelativeLayout>
